@@ -116,3 +116,22 @@ if (emailCard) {
     }
   });
 }
+
+// ============ MOBILE NAV TOGGLE ============
+var navToggle = document.getElementById('nav-toggle');
+var navLinksMenu = document.getElementById('nav-links');
+
+if (navToggle && navLinksMenu) {
+  navToggle.addEventListener('click', function () {
+    navToggle.classList.toggle('open');
+    navLinksMenu.classList.toggle('open');
+  });
+
+  // close menu after tapping a link
+  navLinksMenu.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      navToggle.classList.remove('open');
+      navLinksMenu.classList.remove('open');
+    });
+  });
+}
