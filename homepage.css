@@ -1146,3 +1146,7 @@ a.stat-card { color: inherit; }
     pointer-events: auto;
   }
 }
+@media (max-width: 480px) {
+  .float-badge-ai { left: 0; }
+  .float-badge-cyber { right: 0; }
+}
