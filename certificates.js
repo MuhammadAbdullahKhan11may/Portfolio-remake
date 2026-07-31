@@ -32,6 +32,25 @@ filterLinks.forEach(function (link) {
 
 // initial count on page load (shows total, since "All" is active by default)
 updateCertCounter(certCards.length);
+
+// ============ MOBILE NAV TOGGLE ============
+var navToggle = document.getElementById('nav-toggle');
+var navLinksMenu = document.getElementById('nav-links');
+
+if (navToggle && navLinksMenu) {
+  navToggle.addEventListener('click', function () {
+    navToggle.classList.toggle('open');
+    navLinksMenu.classList.toggle('open');
+  });
+
+  // close menu after tapping a link/filter (but not before the filter click handler above runs)
+  navLinksMenu.querySelectorAll('.nav-link').forEach(function (link) {
+    link.addEventListener('click', function () {
+      navToggle.classList.remove('open');
+      navLinksMenu.classList.remove('open');
+    });
+  });
+}
 // ============ CERTIFICATE MODAL ============
 var modalOverlay = document.getElementById('cert-modal-overlay');
 var modalImg = document.getElementById('cert-modal-img');
