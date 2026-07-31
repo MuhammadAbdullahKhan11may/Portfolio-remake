@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdullah Khan — Projects</title>
+<link rel="stylesheet" href="homepage.css">
+<link rel="stylesheet" href="projects.css">
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="homepage.html#home" class="brand">
+      <img src="profile.jpeg" alt="Abdullah Khan" class="brand-avatar">
+      <span class="brand-name">Abdullah Khan</span>
+    </a>
+    <nav class="nav-links">
+      <a href="homepage.html#home" class="nav-link">&larr; Back</a>
+      <button class="nav-link filter-link" data-filter="development">Development</button>
+      <button class="nav-link filter-link" data-filter="electronics">Electronics</button>
+      <button class="nav-link filter-link" data-filter="co-curricular">Co-curricular</button>
+    </nav>
+  </div>
+</header>
+
+<section id="projects-page" class="section projects-page">
+
+  <div class="section-heading">
+    <div class="eyebrow">MY WORK</div>
+    <h2>My <span class="accent">Projects</span></h2>
+    <p class="section-subtitle">A collection of projects that reflect my passion for problem-solving and building impactful solutions.</p>
+  </div>
+
+  <div class="projects-grid">
+
+  <!-- Card 1: Recipify -->
+  <div class="project-card"
+       data-category="development"
+       data-title="DSA-Based Recipe Ingredient Organizer"
+       data-badge1="GUI / WEB APPLICATION"
+       data-badge2="✅ COMPLETED"
+       data-desc="Transformed a console-based OOP project into a modern web application using Python, HTML, CSS, and JavaScript. Implemented Linked Lists, Hash Tables, Stacks, Queues, Binary Search Trees, Binary Search, and Set Operations to optimize recipe storage, ingredient management, searching, categorization, and retrieval. Designed an intuitive user interface with additional features such as recipe browsing, meal planning, and ingredient comparison while applying software engineering and data structure principles."
+       data-tags="Python,HTML,CSS,JavaScript,Linked List,Hash Table,BST,Stack,Queue,Binary Search,Set Operations"
+       data-link="https://muhammadabdullahkhan11may.github.io/Recipe-ingredient-Organizer/index.html">
+    <div class="project-card-img">
+      <img src="recipify.png" alt="Recipify - DSA-Based Recipe Ingredient Organizer">
+    </div>
+    <h3 class="project-card-title">DSA-Based Recipe Ingredient Organizer</h3>
+  </div>
+
+  <!-- Card 2: Fire Safety Alarm Simulation -->
+  <div class="project-card"
+     data-category="electronics"
+     data-title="Intelligent Fire Safety Alarm System Simulation"
+     data-badge1="MULTISIM · CIRCUIT SIMULATION"
+     data-badge2="✅ COMPLETED"
+     data-desc="Designed and simulated a Fire Safety Alarm System using Multisim to model an intelligent fire detection mechanism based on fundamental physics and electronic circuit principles. The system was developed to detect abnormal environmental conditions such as temperature increase and smoke/fire indicators, triggering an alarm mechanism for early hazard prevention. The project involved circuit design, sensor logic simulation, voltage/current analysis, and troubleshooting of electronic components to ensure accurate alarm activation under predefined conditions. Emphasis was placed on circuit efficiency, safety automation, and real-time response simulation through virtual prototyping."
+     data-tags="Multisim,Computer Simulations,Electronics Fundamentals,Circuit Analysis,Control Systems Design,Technical Documentation"
+     data-link="Fire detector alarm Presentation.pdf">
+  <div class="project-card-img">
+    <img src="simulation.jpg" alt="Intelligent Fire Safety Alarm System Simulation circuit">
+  </div>
+  <h3 class="project-card-title">Intelligent Fire Safety Alarm System Simulation</h3>
+</div>
+
+  <!-- Card 3: Coming Soon — no modal, stays a placeholder -->
+  <div class="project-card project-card-placeholder" data-category="co-curricular">
+    <div class="project-card-img project-card-img-empty">
+      <span>Project Image</span>
+    </div>
+    <h3 class="project-card-title project-card-title-muted">Coming Soon</h3>
+  </div>
+
+</div>
+</section>
+<!-- ============ PROJECT MODAL ============ -->
+<div class="project-modal-overlay" id="project-modal-overlay">
+  <div class="project-modal">
+    <button class="project-modal-close" id="project-modal-close">&times;</button>
+
+    <div class="project-modal-details">
+  <div class="project-modal-scroll">
+    <div class="project-modal-badges" id="project-modal-badges"></div>
+    <h3 id="project-modal-title"></h3>
+    <p class="project-modal-desc" id="project-modal-desc"></p>
+    <div class="project-modal-tags" id="project-modal-tags"></div>
+  </div>
+  <a href="#" id="project-modal-link" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+    Visit Website <span class="arrow">&rarr;</span>
+  </a>
+</div>
+
+    <div class="project-modal-image">
+      <img id="project-modal-img" src="" alt="">
+    </div>
+  </div>
+</div>
+<script src="project.js"></script>
+</body>
+</html>

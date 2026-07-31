@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdullah Khan — Portfolio</title>
+<link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+
+  <!-- NAVBAR (fixed / locked) -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="brand" data-target="home">
+  <img src="profile.jpeg" alt="Abdullah Khan" class="brand-avatar">
+  <span class="brand-name">Abdullah Khan</span>
+</a>
+      <nav class="nav-links">
+        <a href="#home" class="nav-link active" data-target="home">Home</a>
+        <a href="#about" class="nav-link" data-target="about">About</a>
+        <a href="#education" class="nav-link" data-target="education">Education</a>
+        <a href="#skills" class="nav-link" data-target="skills">Skills</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link" data-target="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HOME / HERO -->
+  <section id="home" class="section hero">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="badge-pill">
+          <span class="dot"></span>
+          BSCS &middot; MAJU &middot; 3rd Semester &middot; Open to Internships
+        </div>
+
+        <h1 class="hero-title">
+          Building Solutions.<br>
+          <span class="accent">Solving Problems.</span>
+        </h1>
+
+        <p class="hero-subtitle">I'm a <strong><span id="typed-role"></span></strong><span class="typing-cursor">|</span></p>
+
+        <p class="hero-desc">
+          Passionate about cybersecurity and AI, with hands-on experience in
+          full stack development, data structures, and networking. Also a
+          Physics educator who brings strong communication and leadership
+          to every challenge.
+        </p>
+
+        <div class="hero-actions">
+         <a href="projects.html" class="btn btn-primary">View Projects <span class="arrow">&rarr;</span></a>
+          <a href="certificates.html" class="btn btn-outline">View Certificates</a>
+        </div>
+
+        <div class="find-me">
+  <span class="find-me-label">Find me on:</span>
+  <a href="#contact" class="social-btn" data-target="contact">GitHub</a>
+  <a href="#contact" class="social-btn" data-target="contact">LinkedIn</a>
+</div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="ring-wrap">
+          <svg class="ring-svg" viewBox="0 0 400 400">
+            <defs>
+              <linearGradient id="ringGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ff9d4d"/>
+                <stop offset="35%" stop-color="#e9772c"/>
+                <stop offset="65%" stop-color="#c26bd9"/>
+                <stop offset="100%" stop-color="#3fd0c9"/>
+              </linearGradient>
+            </defs>
+            <circle cx="200" cy="200" r="180" fill="none" stroke="url(#ringGradient)" stroke-width="2" stroke-dasharray="6 4" />
+          </svg>
+
+          <div class="avatar-circle">
+  <img src="profile.jpeg" alt="Abdullah Khan" class="avatar-photo">
+</div>
+
+          <div class="float-badge float-badge-ai">
+            <span class="float-icon">🤖</span>
+            <div>
+              <div class="float-title">AI Engineer</div>
+              <div class="float-sub">In Progress</div>
+            </div>
+          </div>
+
+          <div class="float-badge float-badge-cyber">
+            <span class="float-icon lock">🔒</span>
+            <div>
+              <div class="float-title">Cybersecurity</div>
+              <div class="float-sub">Enthusiast</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </section>
+
+  <!-- STATS STRIP -->
+  <section id="stats" class="section stats">
+    <div class="stats-grid">
+      <div class="stat-card">
+  <div class="stat-icon">🚀</div>
+  <div class="stat-text">
+    <div class="stat-number">3+</div>
+    <div class="stat-label">Projects</div>
+    <div class="stat-sub">Completed</div>
+  </div>
+</div>
+
+      <div class="stat-card">
+  <div class="stat-icon">📜</div>
+  <div class="stat-text">
+    <div class="stat-number">25+</div>
+    <div class="stat-label">Certificates</div>
+    <div class="stat-sub">Earned</div>
+  </div>
+</div>
+<div class="stat-card">
+  <div class="stat-icon">⚔️</div>
+  <div class="stat-text">
+    <div class="stat-number">2+</div>
+    <div class="stat-label">Hackathons</div>
+    <div class="stat-sub">Participated</div>
+  </div>
+</div>
+<div class="stat-card">
+  <div class="stat-icon">📚</div>
+  <div class="stat-text">
+    <div class="stat-number">3rd</div>
+    <div class="stat-label">Semester</div>
+    <div class="stat-sub">BSCS @ MAJU</div>
+  </div>
+</div>
+      
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="section-heading">
+      <div class="eyebrow">WHO I AM</div>
+      <h2>About Me</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-copy">
+        <blockquote class="about-quote">
+          "I believe every complex problem has an elegant solution — you just need the right tools and the right mindset."
+        </blockquote>
+
+        <p>
+          I'm <strong>Muhammad Abdullah Khan</strong>, a passionate Computer
+          Science student at <span class="accent">MAJU</span>, currently in
+          my 3rd semester. My journey in tech began with a deep curiosity
+          about how systems work — from fundamental algorithms to complex
+          networks.
+        </p>
+
+        <p>
+          I specialize in <strong>Data Structures &amp; Algorithms</strong>,
+          <strong>Object-Oriented Programming</strong>, and
+          <strong>Full Stack Development</strong>, while actively exploring
+          the realms of Cybersecurity and Artificial Intelligence.
+        </p>
+
+        <p>
+          Beyond coding, I've channeled my passion for knowledge into
+          <strong>teaching Physics</strong>, developing strong communication
+          and leadership skills that I bring to every technical challenge.
+        </p>
+
+        <div class="tag-row">
+          <span class="tag">DSA</span>
+          <span class="tag">OOP</span>
+          <span class="tag">Networking</span>
+          <span class="tag">Cybersecurity</span>
+          <span class="tag">AI/ML</span>
+          <span class="tag">Physics Educator</span>
+          <span class="tag">C++</span>
+          <span class="tag">Python</span>
+        </div>
+      </div>
+
+      <div class="about-visual">
+        <div class="frame-box">
+  <div class="frame-photo-wrap">
+    <img src="about_me.jpeg" alt="Abdullah Khan" class="frame-photo">
+  </div>
+  <div class="corner-badge semester-badge">
+    <div class="float-title">3rd</div>
+    <div class="float-sub">Semester</div>
+  </div>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section education">
+    <div class="section-heading">
+      <div class="eyebrow">MY JOURNEY</div>
+      <h2>Education Timeline</h2>
+      <p class="section-subtitle">A structured path from foundations to frontiers</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-line"></div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon current">🎓</div>
+        <div class="timeline-card">
+          <div class="card-top">
+            <div>
+              <h3>Bachelor of Science in Computer Science (BSCS)</h3>
+              <div class="card-institution">Muhammad Ali Jinnah University (MAJU)</div>
+            </div>
+            <div class="card-badges">
+              <span class="status-badge current">&bull; Current</span>
+              <span class="date-badge">2023 &ndash; Present</span>
+            </div>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Data Structures &amp; Algorithms</span>
+            <span class="tag">OOP</span>
+            <span class="tag">Computer Networking</span>
+            <span class="tag">Computer Graphics</span>
+            <span class="tag">Full Stack Development</span>
+            <span class="tag">AI Integration</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon">📖</div>
+        <div class="timeline-card">
+          <div class="card-top">
+            <div>
+              <h3>A Levels</h3>
+              <div class="card-institution">Previous Institution</div>
+            </div>
+            <div class="card-badges">
+              <span class="date-badge">2021 &ndash; 2023</span>
+            </div>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Physics</span>
+            <span class="tag">Mathematics</span>
+            <span class="tag">Computer Science</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon">📝</div>
+        <div class="timeline-card">
+          <div class="card-top">
+            <div>
+              <h3>O Levels</h3>
+              <div class="card-institution">Previous Institution</div>
+            </div>
+            <div class="card-badges">
+              <span class="date-badge">2019 &ndash; 2021</span>
+            </div>
+          </div>
+          <div class="tag-row">
+            <span class="tag">8 Subjects</span>
+            <span class="tag">Science Focus</span>
+            <span class="tag">Distinguished Performance</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS (placeholder section so the nav link has a target) -->
+  <!-- SKILLS -->
+<section id="skills" class="section skills">
+  <div class="section-heading">
+    <div class="eyebrow">WHAT I KNOW</div>
+    <h2>Technical Skills</h2>
+    <p class="section-subtitle">Built through coursework, projects, and self-driven exploration</p>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-card" tabindex="0">
+      <div class="skill-card-inner">
+        <div class="skill-card-front">
+          <div class="skill-icon">💻</div>
+          <h3>C++ &amp; Python Programming</h3>
+        </div>
+        <div class="skill-card-back">
+          <p>Proficient in both C++ and Python, with hands-on experience building logic-driven applications and solving computational problems. I use C++ for performance-critical tasks and Python for rapid development, automation, and AI-related implementations.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-card" tabindex="0">
+      <div class="skill-card-inner">
+        <div class="skill-card-front">
+          <div class="skill-icon">🧮</div>
+          <h3>Data Structures &amp; Algorithms</h3>
+        </div>
+        <div class="skill-card-back">
+          <p>Strong understanding of core data structures including arrays, linked lists, stacks, queues, trees, and hash maps. Skilled in applying these concepts to write efficient, optimized solutions and continuously improving problem-solving ability through practice.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-card" tabindex="0">
+      <div class="skill-card-inner">
+        <div class="skill-card-front">
+          <div class="skill-icon">🧱</div>
+          <h3>Object-Oriented Programming</h3>
+        </div>
+        <div class="skill-card-back">
+          <p>Experienced in applying OOP principles such as encapsulation, inheritance, polymorphism, and abstraction to design clean, modular, and maintainable systems across multiple projects.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-card" tabindex="0">
+      <div class="skill-card-inner">
+        <div class="skill-card-front">
+          <div class="skill-icon">🏆</div>
+          <h3>Competitive Programming</h3>
+        </div>
+        <div class="skill-card-back">
+          <p>Actively practice competitive programming to enhance logical thinking, time complexity analysis, and problem-solving under constraints, focusing on writing efficient and optimized code.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-card" tabindex="0">
+      <div class="skill-card-inner">
+        <div class="skill-card-front">
+          <div class="skill-icon">⚡</div>
+          <h3>Hackathons &amp; Problem Solving</h3>
+        </div>
+        <div class="skill-card-back">
+          <p>Participated in fast-paced hackathons, developing solutions under strict deadlines while collaborating with teams, brainstorming ideas, and delivering functional prototypes.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-card" tabindex="0">
+      <div class="skill-card-inner">
+        <div class="skill-card-front">
+          <div class="skill-icon">🤖</div>
+          <h3>AI Integration</h3>
+        </div>
+        <div class="skill-card-back">
+          <p>Exploring practical implementation of AI by integrating APIs and intelligent systems into applications to automate workflows and enhance user experiences.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-card" tabindex="0">
+      <div class="skill-card-inner">
+        <div class="skill-card-front">
+          <div class="skill-icon">🧠</div>
+          <h3>Prompt Engineering</h3>
+        </div>
+        <div class="skill-card-back">
+          <p>Skilled in crafting precise prompts to effectively utilize AI tools for coding, debugging, and problem-solving, improving productivity while maintaining strong control over logic and architecture.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-card" tabindex="0">
+      <div class="skill-card-inner">
+        <div class="skill-card-front">
+          <div class="skill-icon">🌐</div>
+          <h3>HTML &amp; CSS</h3>
+        </div>
+        <div class="skill-card-back">
+          <p>Capable of building responsive and visually structured web interfaces using HTML and CSS, including layouts, animations, and interactive components.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-heading soft-skills-heading">
+    <div class="eyebrow">🌟 SOFT SKILLS</div>
+    <h2>Beyond the Code</h2>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-card" tabindex="0">
+      <div class="skill-card-inner">
+        <div class="skill-card-front">
+          <div class="skill-icon">🤝</div>
+          <h3>Leadership &amp; Teamwork</h3>
+        </div>
+        <div class="skill-card-back">
+          <p>Experienced in leading teams and managing group activities, ensuring effective collaboration, resolving conflicts, and maintaining a productive and supportive environment.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-card" tabindex="0">
+      <div class="skill-card-inner">
+        <div class="skill-card-front">
+          <div class="skill-icon">🗣️</div>
+          <h3>Communication &amp; Teaching</h3>
+        </div>
+        <div class="skill-card-back">
+          <p>Strong communication skills developed through teaching, simplifying complex concepts, and engaging audiences through structured explanations and interactive learning.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-card" tabindex="0">
+      <div class="skill-card-inner">
+        <div class="skill-card-front">
+          <div class="skill-icon">🎤</div>
+          <h3>Public Speaking</h3>
+        </div>
+        <div class="skill-card-back">
+          <p>Confident speaker with experience addressing large audiences, conducting sessions, and adapting communication style based on the audience.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-card" tabindex="0">
+      <div class="skill-card-inner">
+        <div class="skill-card-front">
+          <div class="skill-icon">💼</div>
+          <h3>Professional Experience</h3>
+        </div>
+        <div class="skill-card-back">
+          <p>Exposure to real-world environments through internships, developing discipline, responsibility, and the ability to work under pressure.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-card" tabindex="0">
+      <div class="skill-card-inner">
+        <div class="skill-card-front">
+          <div class="skill-icon">🧩</div>
+          <h3>Problem Solving &amp; Adaptability</h3>
+        </div>
+        <div class="skill-card-back">
+          <p>Ability to approach challenges with structured thinking, adapt to changing situations, and make effective decisions while maintaining focus and consistency.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- PROJECTS (placeholder section so the nav link has a target) -->
+  <!-- PROJECTS -->
+<section id="projects" class="section projects">
+  <div class="section-heading">
+    <div class="eyebrow">MY WORK</div>
+    <h2>Projects</h2>
+    <p class="section-subtitle">A few things I've built while learning by doing</p>
+    <a href="#projects-grid" class="btn btn-primary scroll-btn projects-cta" data-target="projects-grid">
+      View Projects <span class="arrow">&rarr;</span>
+    </a>
+  </div>
+
+  <div class="projects-grid" id="projects-grid">
+
+    <div class="project-card">
+  <div class="project-image-placeholder project-image-recipify">
+    <img src="recipify.png" alt="Recipify project screenshot" class="project-photo">
+  </div>
+  <div class="project-card-body">
+    <h3>DSA-Based Recipe Ingredient Organizer</h3>
+  </div>
+</div>
+
+<div class="project-card">
+  <div class="project-image-placeholder project-image-simulation">
+    <img src="simulation.jpg" alt="Fire safety alarm circuit simulation" class="project-photo">
+  </div>
+  <div class="project-card-body">
+    <h3>Intelligent Fire Safety Alarm System Simulation</h3>
+  </div>
+</div>
+
+<div class="project-card project-card-soon">
+  <div class="project-image-placeholder">
+    <span>Project Image</span>
+  </div>
+  <div class="project-card-body">
+    <h3>Coming Soon</h3>
+  </div>
+</div>
+
+  </div>
+</section>
+
+  <!-- CONTACT (placeholder section so the nav link has a target) -->
+  <!-- CONTACT -->
+<section id="contact" class="section contact">
+  <div class="section-heading">
+    <div class="eyebrow">GET IN TOUCH</div>
+    <h2>Contact</h2>
+    <p class="section-subtitle">Reach out — I'm open to internships, collabs, and a quick hello</p>
+  </div>
+
+  <div class="contact-grid">
+
+    <!-- EMAIL: flips to reveal address -->
+    <div class="contact-card flip-card" id="email-card" tabindex="0">
+      <div class="contact-card-inner">
+        <div class="contact-card-front">
+          <div class="contact-icon">📧</div>
+          <h3>Email</h3>
+          <p class="contact-hint">Click to reveal</p>
+        </div>
+        <div class="contact-card-back">
+          <div class="contact-icon">📧</div>
+          <h3>Email</h3>
+          <a href="mailto:abdullahkhan11may@gmail.com" class="contact-value">abdullahkhan11may@gmail.com</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- LINKEDIN: direct link -->
+    <a href="https://www.linkedin.com/in/muhammad-abdullah-khan-34b156402" target="_blank" rel="noopener noreferrer" class="contact-card contact-link-card">
+      <div class="contact-icon">💼</div>
+      <h3>LinkedIn</h3>
+      <p class="contact-value">linkedin.com/in/muhammad-abdullah-khan</p>
+    </a>
+
+    <!-- GITHUB: direct link -->
+    <a href="https://github.com/MuhammadAbdullahKhan11may" target="_blank" rel="noopener noreferrer" class="contact-card contact-link-card">
+      <div class="contact-icon">🐙</div>
+      <h3>GitHub</h3>
+      <p class="contact-value">github.com/MuhammadAbdullahKhan11may</p>
+    </a>
+
+    <!-- CV: acts as a plain button, no flip, link added later -->
+    <a href="CV.png" download rel="noopener noreferrer" class="contact-card contact-link-card contact-cv-card">
+      <div class="contact-icon">📄</div>
+      <h3 class="accent">Download CV</h3>
+      <p class="contact-value">Get my latest resume</p>
+    </a>
+
+  </div>
+</section>
+
+ <!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a href="#home" class="footer-brand" data-target="home">
+  <img src="profile.jpeg" alt="Muhammad Abdullah Khan" class="brand-avatar">
+  <span class="brand-name">Muhammad Abdullah Khan</span>
+</a>
+
+    <nav class="footer-links">
+      <a href="#home" data-target="home">Home</a>
+      <a href="#about" data-target="about">About</a>
+      <a href="#education" data-target="education">Education</a>
+      <a href="#skills" data-target="skills">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="#contact" data-target="contact">Contact</a>
+    </nav>
+
+    <div class="footer-copy">&copy; 2024 Muhammad Abdullah Khan. </div>
+  </div>
+</footer>
+  
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
