@@ -224,7 +224,13 @@ ul { list-style: none; }
   gap: 40px;
   align-items: center;
 }
-
+.hero-copy,
+.hero-visual,
+.about-copy,
+.about-visual,
+.ring-wrap {
+  min-width: 0;
+}
 .badge-pill {
   display: inline-flex;
   align-items: center;
