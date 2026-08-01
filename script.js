@@ -23,15 +23,17 @@
     }
   }
 
-  function erase() {
+ function erase() {
     var current = roles[roleIndex];
 
-    if (charIndex >= 0) {
-      el.textContent = current.slice(0, charIndex);
+    if (charIndex > 0) {
       charIndex--;
+      el.textContent = current.slice(0, charIndex);
       setTimeout(erase, deletingSpeed);
     } else {
+      el.textContent = '';
       roleIndex = (roleIndex + 1) % roles.length;
+      charIndex = 0;
       setTimeout(type, pauseAfterDeleting);
     }
   }
