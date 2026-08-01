@@ -63,7 +63,23 @@ document.querySelectorAll('.project-card[data-title]').forEach(function (card) {
     projectModalOverlay.classList.add('open');
   });
 });
+// ============ MOBILE NAV TOGGLE ============
+var navToggle = document.getElementById('nav-toggle');
+var navLinksMenu = document.getElementById('nav-links');
 
+if (navToggle && navLinksMenu) {
+  navToggle.addEventListener('click', function () {
+    navToggle.classList.toggle('open');
+    navLinksMenu.classList.toggle('open');
+  });
+
+  navLinksMenu.querySelectorAll('.nav-link').forEach(function (link) {
+    link.addEventListener('click', function () {
+      navToggle.classList.remove('open');
+      navLinksMenu.classList.remove('open');
+    });
+  });
+}
 function closeProjectModal() {
   projectModalOverlay.classList.remove('open');
 }
